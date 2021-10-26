@@ -2,6 +2,8 @@ import tkinter as tk
 from tkinter import *
 from tkinter import ttk
 
+import serialOut as so
+
 class TrainControl( Frame ):
 
     #Define the structure of the GUI. Window & buttons, etc...
@@ -31,23 +33,29 @@ class TrainControl( Frame ):
     #Listener functions for buttons
     def ring_bell(self):
         print("Ring the bell!")
+        so.sendCommand("bell")
 
     def start_train(self):
         print("Start the train!")
+        so.sendCommand("forwardDir")
 
     def acc_train(self):
         print("Accelerate the train!")
+        so.sendCommand("accelerate")
 
     def move_train(self):
         print("Move the train!")
+        so.sendCommand("move")
 
     def dec_train(self):
         print("Decelerate the train!")
+        so.sendCommand("decelerate")
 
     def stop_train(self):
         print("Stop the train!")
+        so.sendCommand("stop")
 
-def main(): 
+def main():
     TrainControl().mainloop()
 
 if __name__ == '__main__':

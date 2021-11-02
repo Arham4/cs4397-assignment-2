@@ -51,18 +51,14 @@ commands = {
 "stop":formatSerial(key['kind']['engine'], trainId, key['command']['absolutespeed'], 0x0)
 }
 
-portOpen = False
-
-def startSerial():
-    port = serial.Serial('COM1', 9600, serial.EIGHTBITS, serial.PARITY_NONE, serial.STOPBITS_ONE)
-    portOpen = True
-
 def sendSerial(serialData):
-    if not portOpen:
-        startSerial()
+    port = serial.Serial('COM1', 9600, serial.EIGHTBITS, serial.PARITY_NONE, serial.STOPBITS_ONE)
 
-    port.write(serialData)
-    port.flush()
+    try:
+        port.write(serialData)
+        port.flush()
+    except:
+        print("Unable to send command. The port was not configured properly.")
 
 def sendCommand(nickname):
     sendSerial(commands[nickname])

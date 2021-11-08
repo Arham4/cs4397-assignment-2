@@ -1,4 +1,14 @@
-# Assignment 2 - Group 7
+# Train Control Embedded System
+### Assignment 2 - Group 7
+
+The goal of this program is to control the train in Lab ECSS 3.217 at The University of Texas at Dallas. The program has a GUI with buttons on it. Each button is a function to control the train.
+
+- Button (Ring the bell): a command is sent to the train to ring the bell
+- Button (Start the train): a command is sent to the train to start the train
+- Button (Accelerate the train): a command is sent to the train to accelerate
+- Button (Move the train): a command is sent to the train to move the train
+- Button (Decelerate the train): a command is sent to the train to decelerate the train
+- Button (Stop the train): a command is sent to the train to stop the train
 
 ## Setup
 
@@ -10,17 +20,6 @@
 ```
 ./python/python.exe train.py
 ```
-
-## Brief description:
-
-The goal of our program is to control the train in Lab ECSS 3.217. The program has a GUI with buttons on it. Each button is a function to control the train.
-
-- Button (Ring the bell): a command is sent to the train to ring the bell
-- Button (Start the train): a command is sent to the train to start the train
-- Button (Accelerate the train): a command is sent to the train to accelerate
-- Button (Move the train): a command is sent to the train to move the train
-- Button (Decelerate the train): a command is sent to the train to decelerate the train
-- Button (Stop the train): a command is sent to the train to stop the train
 
 ## How this procedure differs from the development of a general purpose application
 

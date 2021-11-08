@@ -10,6 +10,8 @@ The goal of this program is to control the train in Lab ECSS 3.217 at The Univer
 - Button (Decelerate the train): a command is sent to the train to decelerate the train
 - Button (Stop the train): a command is sent to the train to stop the train
 
+This was made for CS 4397 (Embedded Systems) at the University of Texas at Dallas, taught by Dr. Farokh Bastani.
+
 ## Setup
 
 ### Windows

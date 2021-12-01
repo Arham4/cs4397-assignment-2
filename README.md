@@ -1,5 +1,6 @@
 # Train Control Embedded System
-### Assignment 2 - Group 7
+
+![image](https://user-images.githubusercontent.com/2886217/144183880-ff59edf9-9800-4407-b96b-a5ff3a3ed83e.png)
 
 The goal of this program is to control the train in Lab ECSS 3.217 at The University of Texas at Dallas. The program has a GUI with buttons on it. Each button is a function to control the train.
 
